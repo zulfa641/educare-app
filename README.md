@@ -1,4 +1,5 @@
 EduCare - Management System (UTS DevOps)
+
 EduCare adalah aplikasi manajemen pendidikan berbasis web yang dirancang untuk mengotomatisasi pengelolaan tugas dan materi pembelajaran bagi sekolah maupun universitas melalui arsitektur Node.js dan Express. Aplikasi ini mengimplementasikan siklus hidup DevOps secara penuh, mulai dari otomatisasi pengujian dan pembangunan kode melalui GitHub Actions, hingga pengiriman otomatis ke lingkungan produksi menggunakan Vercel, serta dilengkapi dengan fitur real-time health monitoring untuk memastikan stabilitas dan performa sistem yang optimal.
 
 Nama    : Bifaqih Zulfa
