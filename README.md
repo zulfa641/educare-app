@@ -9,7 +9,7 @@ Setup CI/CD dan Monitoring EduCare
 - Saya telah mengimplementasikan alur kerja DevOps otomatis menggunakan GitHub Actions sebagai instrumen Continuous Integration (CI) yang bertugas melakukan pemeriksaan kualitas kode (linting), pengujian unit (testing), dan pembuatan artefak (build) secara otomatis setiap kali ada perubahan kode. Untuk Continuous Delivery (CD), saya menggunakan platform Vercel yang terhubung langsung dengan repositori GitHub guna melakukan deployment otomatis ke lingkungan produksi secara real-time. Di sisi operasional, saya menerapkan sistem Monitoring & Logging melalui pembuatan Health Check Endpoint (/health) untuk memantau vitalitas aplikasi, serta memanfaatkan dashboard log produksi untuk mengamati trafik dan mendeteksi masalah performa secara dini.
 
 Link :
-- Repository GitHub: [https://github.com/zulfa641/educare-app)
+- Repository GitHub: https://github.com/zulfa641/educare-app
 - Aplikasi Live (CD): [https://vercel.app](https://vercel.app)
 - Health Check Status: [https://vercel.app/health](https://vercel.app/health)
 
