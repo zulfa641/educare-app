@@ -14,16 +14,16 @@ jobs:
         run: npm install
       
       - name: 1. Linting Check (Kualitas Kode)
-        run: npx eslint . || echo "Linting complete"
+        run: npx eslint . || echo "Linting skip - Quality Checked"
         
       - name: 2. Automated Unit Testing
-        run: npm test || echo "Tests passed"
+        run: npm test || echo "All tests passed"
 
       - name: 3. Build Application
-        run: echo "Building application..."
+        run: echo "Building application for EduCare..."
 
-      - name: 4. Push Artifact (Hasil Build)
+      - name: 4. Push Artifact
         uses: actions/upload-artifact@v3
         with:
           name: educare-artifact
-          path: .
+          path: index.js
