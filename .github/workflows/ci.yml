@@ -1,28 +1,15 @@
-name: EduCare Full CI Pipeline
+name: EduCare CI Pipeline
 on: [push]
 jobs:
-  Build-and-Test:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: 1. Install Dependencies
-        run: echo "Installing npm packages..."
-
-      - name: 2. Linting Check
-        run: echo "Linting quality check passed"
-
-      - name: 3. Automated Testing
-        run: echo "All unit tests passed"
-
-      - name: 4. Build Application
-        run: |
-          mkdir -p build
-          echo "EduCare Build Success" > build/result.txt
-
-      - name: 5. Push Artifact
-        uses: actions/upload-artifact@v3
+      - uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
-          name: educare-artifact
-          path: build/
+          node-version: '18'
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Build
+        run: echo "Building App..."
