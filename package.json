@@ -1,9 +1,11 @@
 {
   "name": "educare-app",
   "version": "1.0.0",
+  "description": "Aplikasi EduCare untuk tugas UTS",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"success\""
+    "test": "echo \"No tests yet\" && exit 0"
   },
   "dependencies": {
     "express": "^4.18.2"
